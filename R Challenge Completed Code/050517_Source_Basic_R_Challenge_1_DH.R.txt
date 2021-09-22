@@ -1,0 +1,25 @@
+##this code will produce complete solutions to "050517_Basic_R_Programming_Challenge_1_DH".
+#
+#import data files and merge. write output file.
+omni_q_ldl_values <- read.table("OMNI_Q_LDL_VALUES.txt", header=TRUE, sep="")
+omni_q_lipids_subset_demographics <- read.table("OMNI_Q_LIPIDS_SUBSET_DEMOGRAPHICS.txt", header=TRUE, sep="")
+colnames(omni_q_lipids_subset_demographics)[1] <- "ID"
+omni_q_ldl_demo_merge <- merge( omni_q_ldl_values, omni_q_lipids_subset_demographics, by=c("ID"))
+write.table(omni_q_ldl_demo_merge, "omni_q_ldl_demo_merge.txt", col.names=TRUE, row.names=FALSE, quote=FALSE, sep="\t")
+#
+#generate histogram of ldl lab values and save as pdf.
+pdf("omni_ldl_hist.pdf")
+hist(omni_q_ldl_demo_merge$LAB_VALUE, main="Omni LDL")
+dev.off()
+#
+#generate scatterplot of ldl lab values and save as pdf.
+pdf("omni_ldl_plot.pdf")
+plot(omni_q_ldl_demo_merge$LAB_VALUE, main="Omni LDL")
+dev.off()
+#
+#generate boxplot of ldl lab values by gender and save as pdf.
+pdf("omni_q_ldl_by_gender.pdf")
+plot(omni_q_ldl_demo_merge$GENDER, omni_q_ldl_demo_merge$LAB_VALUE, main="Omni LDL")
+dev.off()
+
+
