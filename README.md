@@ -1,5 +1,13 @@
-This is the R Module for the Dennis Lab for onboarding of new students/trainees/employees.
+Dennis Lab problem set for R
 
-There are three challenges that build on the work of each of the previous challenges. The goal of these challenges is to develop a baseline for R proficiencies amongst lab members.
+This is the introduction module to the R
 
-Also included is some completed code that works through each of the challenges. As can be seen, there is no singlular solution to each challenge and they serve as an example of the different ways to tackle a problem.
+First, you'll need to ensure that you have the following items:
+
+RStudio
+
+Second, there are three (currently) challenge problem sets that attempt to provide an introduction to R. There are no deliverable at the end of each problem set.
+
+Problem_Set_1's Goal: Loading in files in R, doing some basic QC and generating plots
+Problem_Set_2's Goal: Building on PS1, this problem set looks to generate simple statistical measures and create new variables based on logical conditions.
+Problem_Set_3's Goal: PS3 aims to expand on PS2 by automating some of the decisions to classify the data and the subsequent output.
