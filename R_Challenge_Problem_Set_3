@@ -1,0 +1,20 @@
+Basic R Programming Challenge #3
+
+Most of the tasks included in this challenge are tasks you mastered for Challenge #2, but executed for multiple distinct labs (HDL, LDL, Trigs) instead of just on a single lab. Your script should be able to distinguish between the different labs and handle them accordingly. (That is, you don’t want to write a piece of code that will run on the HDL data, then copy/paste and edit so the next piece of code will do the same thing for LDL, then copy/paste and edit again so the next piece of code will do the same thing for Trigs. The code needs to recognize changes in lab name and behave appropriately.) 
+
+Write an R script that will execute the following functions:
+  •	Import data files (“SOME_LABS.txt”, “OMNI_Q_HDL_LDL_TRIGS_DEMO.txt”). 
+  •	Merge the imported files into a single data frame.
+  •	Perform a QC check and document what, if anything, has been corrected or removed.
+  •	Determine age at event for each lab observation and report this in a new column.
+  •	Create two new data frames: one comprising pediatric observations (age 17 and under) and one comprising adult observations (age 18 and over).
+  •	Generate mean lab values and median lab values, for each lab, for each individual in each population (ped and adult). 
+  •	For each population (ped and adult) generate a data frame that includes id, lab name, lab value, mean lab value for each individual, median lab value for each individual, lab date, date of birth, gender, and age.  Save the data frames as text files.
+
+Create and save the following figures as PDF files:
+  •	scatterplot of median lab values for adult population, for each lab
+  •	histogram of median lab values for adult population, for each lab
+  •	boxplot of median lab values by gender [two boxplots (F, M) side by side in one figure] for adult population, for each lab
+  
+Your script should be able to automatically assign a unique, descriptive filename for each figure, which includes the lab name. For example, “…scatterplot_median_HDL.pdf”, “…scatterplot_median_LDL.pdf”, “…scatterplot_median_trigs.pdf”. Similarly, it should automatically assign a unique, descriptive main title within each figure, which includes the lab name. (Imagine that instead of 3 labs, you have 300, and you won’t want to copy/paste and manually edit all those file names and figure titles, so the code will need to generate these automatically as it loops through the data.)
+Use file naming conventions and commenting as you did for Challenges 1 and 2. Write a readme file describing your code. The readme should include the name of your source file, all input and output files, and a brief description of what the code does. 

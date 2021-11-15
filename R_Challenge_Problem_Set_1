@@ -1,0 +1,21 @@
+Basic R Programming Challenge #1
+
+You are free to use whatever packages or methods you'd like but suggested packages that may be useful are:
+dplyr (for data manipulation) - see https://dplyr.tidyverse.org
+#Save for #2 or #3 ? ggplot2 (for plotting) - see https://ggplot2.tidyverse.org
+
+Write an R script that will execute the following functions:
+•	import data files (“OMNI_Q_LDL_VALUES.txt”, “OMNI_Q_LIPID_SUBSET_DEMOGRAPHICS.txt”).
+•	Perform QC checks on the data
+  - Do not attempt to fix data but rather remove any records that have annomalies
+  - Save a data frame of all the values you have removed from the sample
+•	merge the imported files into a single data frame (and save as a text file).
+
+Create and save the following figures as PDF files:
+•	scatterplot of lab values
+•	histogram of lab values
+•	boxplot of lab values by gender [two boxplots (F, M) side by side in one figure]
+
+Be sure to give your files descriptive names. Please use the file naming convention “MMDDYY_description_initials” for output files. For your source file, please use the convention “MMDDYY_Source_description_initials.R.txt” 
+
+Even though this will be a short bit of code, please go ahead and insert comments describing what each section of code is doing.
