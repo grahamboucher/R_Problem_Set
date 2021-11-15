@@ -1,0 +1,20 @@
+Basic R Programming Challenge #2
+
+Write an R script that will execute the following functions:
+  •	Import data files (“OMNI_Q_LDL_VALUES.txt”, “OMNI_Q_LIPID_SUBSET_DEMOGRAPHICS.txt”).
+  •	Perform QC checks on the data and combine the imported files into a single data frame.
+  - Do not attempt to fix data but rather remove any records that have annomalies
+  - Save a data frame of all the values you have removed from the sample
+  •	Determine age at event for each lab observation and report this in a new column.
+  •	Create two new data frame: one comprising pediatric observations (age 17 and under) and one comprising adult observations (age 18 and over).
+  •	Generate summary statistics for each of the new data frames (ped and adult) and save as text files. (Hint: There are several ways to do this. For this exercise, choose a single command that will generate all the stats. The output may vary depending on what method you choose, but should include mean, median, min, and max for the lab values across the population.)
+  •	Generate mean lab values and median lab values, for each individual in each population (ped and adult). 
+  •	For each population (ped and adult) generate a data frame that includes id, lab value, mean lab value for each individual, median lab value for each individual, lab date, date of birth, gender, and age. (It’s okay if it includes additional columns.) Save the data frames as text files.
+
+Create and save the following figures as PDF files:
+  •	scatterplot of median lab values for adult population
+  •	histogram of median lab values for adult population
+  •	boxplot of median lab values by gender [two boxplots (F, M) side by side in one figure] for adult population
+  
+Be sure to give your files descriptive names. Please use the file naming convention “MMDDYY_description_initials” for output files. For your source file, please use the convention “MMDDYY_Source_description_initials.R.txt” 
+Even though this will be a short bit of code, please go ahead and insert comments describing what each section of code is doing.
