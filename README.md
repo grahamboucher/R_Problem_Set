@@ -1,6 +1,6 @@
 Dennis Lab problem set for R
 
-This is the introduction module to the R
+This is the introduction module to R
 
 First, you'll need to ensure that you have the following items:
 
