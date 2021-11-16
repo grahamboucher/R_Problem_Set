@@ -24,3 +24,4 @@ Problem_Set_4's Goal: This problem set will have you create a continegency table
 Problem_Set_4's Goal: This problem set will have you create a continegency table, calculate OR, and use a statistical test on SNPs that match between GWAS and eQTL/mQTL
 >>>>>>> 627f49678563123ec055df923fe35d424be6c602
 >>>>>>> 146daa45ea821f2ad1a9703fd9922f2eb29ee608
+
