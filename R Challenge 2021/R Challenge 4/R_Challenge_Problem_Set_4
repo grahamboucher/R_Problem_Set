@@ -1,0 +1,24 @@
+R_Challenge_Problem_Set_4
+
+This problem set aims to get you used to reading in some real data, cleaning it, and generating some simple results. 
+
+!You may want to try running this through the R Singularity on Sockeye!
+(https://confluence.it.ubc.ca/display/UARC/RStudio+with+Singularity)
+
+We are going to be using the data on Autism Spectrum Disorder from J Grove et al's paper "Identification of common genetic risk variants for autism spectrum disorder" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6454898/)
+
+1. Read in GWAS Data
+  a. Get the ASD sumstats from https://figshare.com/articles/dataset/asd2019/14671989?file=28169289
+  Hint: *Look at different ways to read in data (data.table package may be useful here)
+2. Read in annotation files (mQTL & eQTL)
+  a. Peng - Cis & Trans eQTL in placenta pdf
+  b. Delahaye - Excel file journal.pgen.1007785.s018.xlsx
+  Hint: Similar to step 1, you may want to look at different packages to assist in reading in the data
+3. Perform QC on data
+  a. Remove copy number variants (CNV's) and multi-allelic SNPs
+4. Create a contingency table that looks at SNP's that match from GWAS / annotations and that meet p<1e-5 threshold
+5. Calculate odds ratio and confidence intervals using contingency table you created
+6. Choose a statistical test to determine significance of association
+
+Findings:
+1. Discuss findings with you mentor (e.g. choice of statistical test, what the 2X2 and odds ratio tell you)
